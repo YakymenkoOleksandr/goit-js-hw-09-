@@ -23,8 +23,9 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: './dist', // Отут прибрав крапку
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });
+
